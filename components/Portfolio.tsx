@@ -23,29 +23,45 @@ export const Portfolio: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PORTFOLIO_SAMPLES.map((item) => (
-            <div key={item.id} className="group relative bg-slate-50 rounded-xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300">
+            <div key={item.id} className="group relative bg-slate-50 rounded-xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
               {/* Card Image Placeholder */}
-              <div className="h-48 bg-slate-200 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-slate-400">
+              <div className="h-48 bg-slate-200 relative overflow-hidden flex-shrink-0">
+                {item.imageUrl ? (
+                  <img 
+                    src={item.imageUrl} 
+                    alt={item.title}
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    onError={(e) => {
+                      // Fallback if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.parentElement?.classList.add('fallback-icon');
+                    }}
+                  />
+                ) : null}
+                
+                {/* Fallback Icon (shown if no image or image error) */}
+                <div className="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-200 -z-10 group-has-[img[style*='none']]:z-0 group-has-[img:not([src])]:z-0">
                   <Icon name="FileText" size={48} className="opacity-20" />
                 </div>
+
                 {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-primary-900/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="text-white font-medium border border-white/30 px-4 py-2 rounded backdrop-blur-sm">View Details</span>
+                <div className="absolute inset-0 bg-primary-900/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
+                  <span className="text-white font-medium border border-white/30 px-4 py-2 rounded backdrop-blur-sm cursor-pointer">View Details</span>
                 </div>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-3">
                   <span className="text-xs font-bold text-primary-600 uppercase tracking-wider">{item.category}</span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-slate-900 mb-2 group-hover:text-primary-700 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-slate-600 text-sm mb-4 line-clamp-3">
+                <p className="text-slate-600 text-sm mb-4 line-clamp-3 flex-grow">
                   {item.description}
                 </p>
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mt-auto">
                   {item.tags.map((tag, i) => (
                     <span key={i} className="text-xs text-slate-500 bg-white border border-slate-200 px-2 py-1 rounded">
                       #{tag}
@@ -57,7 +73,7 @@ export const Portfolio: React.FC = () => {
           ))}
           
           {/* Call to Action Card for more work */}
-          <div className="bg-slate-900 rounded-xl p-8 flex flex-col justify-center items-center text-center text-white border border-slate-800">
+          <div className="bg-slate-900 rounded-xl p-8 flex flex-col justify-center items-center text-center text-white border border-slate-800 h-full min-h-[400px]">
             <Icon name="Layers" size={48} className="text-primary-500 mb-4" />
             <h3 className="font-serif text-xl font-bold mb-2">More Available</h3>
             <p className="text-slate-400 text-sm mb-6">

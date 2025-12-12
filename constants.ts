@@ -110,24 +110,75 @@ export const EXPERIENCE: ExperienceItem[] = [
 export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
   {
     id: '1',
-    title: 'Neurology Symposium Deck',
-    category: 'Slide Deck',
-    description: 'A comprehensive 60-slide deck for a live symposium focusing on emerging treatments in NMOSD. Includes complex mechanism of action (MOA) visuals and patient case studies.',
-    tags: ['Neurology', 'CME', 'Live Event'],
+    title: 'Comanaging Thyroid Eye Disease',
+    category: 'CME Monograph',
+    description: 'A proactive care approach monograph reviewing clinical features of TED, teprotumumab data, and multidisciplinary management strategies for oculoplastic surgeons and ophthalmologists.',
+    tags: ['Ophthalmology', 'CME', 'Monograph', 'Endocrinology'],
+    imageUrl: './images/portfolio/thyroid-eye-disease.jpg'
   },
   {
     id: '2',
-    title: 'Ophthalmology Needs Assessment',
-    category: 'Strategic Analysis',
-    description: 'In-depth gap analysis and needs assessment for Thyroid Eye Disease, identifying critical knowledge gaps among community practitioners to inform curriculum development.',
-    tags: ['Ophthalmology', 'Grant Funding', 'Strategy'],
+    title: 'Continuous Drug Delivery in nAMD and DME',
+    category: 'CME Webcast',
+    description: 'Expert panel discussion on the latest advancements in port delivery systems and their impact on treatment burden in retinal diseases.',
+    tags: ['Ophthalmology', 'Retina', 'Webcast', 'CME'],
+    imageUrl: './images/portfolio/continuous-drug-delivery.jpg'
   },
   {
     id: '3',
-    title: 'Psychiatry Interactive Module',
-    category: 'Digital Education',
-    description: 'Storyboarding and scientific scriptwriting for an interactive digital module on treatment-resistant depression.',
-    tags: ['Psychiatry', 'Digital', 'Instructional Design'],
+    title: 'Person-Centered Care in Parkinson’s',
+    category: 'CME Monograph',
+    description: 'Systematic approach to managing neuropsychiatric manifestations in PD, including psychosis and dementia, through evidence-based treatment plans and case studies.',
+    tags: ['Neurology', 'Psychiatry', 'Monograph', 'CME'],
+    imageUrl: './images/portfolio/parkinsons-care.jpg'
+  },
+  {
+    id: '4',
+    title: 'Complement Inhibition in Geographic Atrophy',
+    category: 'CE Webcast',
+    description: 'Exploration of new and emerging treatments for GA, focusing on pathophysiology, imaging features, and complement inhibition therapies to slow progression.',
+    tags: ['Ophthalmology', 'Optometry', 'Webcast', 'CE'],
+    imageUrl: './images/portfolio/geographic-atrophy.jpg'
+  },
+  {
+    id: '5',
+    title: 'Evaporative Dry Eye: Diagnosis & Treatments',
+    category: 'CME Podcast',
+    description: 'Audio-visual podcast discussing the role of evaporation in DED, meibomian gland function, and designing evidence-based treatment plans.',
+    tags: ['Ophthalmology', 'Podcast', 'CME', 'Dry Eye'],
+    imageUrl: './images/portfolio/dry-eye-podcast.jpg'
+  },
+  {
+    id: '6',
+    title: 'Rejuvenating Perioral Lines with HA Fillers',
+    category: 'Aesthetic Webcast',
+    description: 'Expert guidance on injection techniques and product selection for perioral and infraorbital rejuvenation utilizing hyaluronic acid fillers.',
+    tags: ['Dermatology', 'Aesthetics', 'Webcast', 'CME'],
+    imageUrl: './images/portfolio/ha-fillers.jpg'
+  },
+  {
+    id: '7',
+    title: 'Seeing Through LEMS: Early Detection',
+    category: 'CE Webcast',
+    description: 'Guide to identifying ocular symptoms of Lambert-Eaton myasthenic syndrome (LEMS) and coordinating care between optometry and neurology.',
+    tags: ['Neurology', 'Neuro-Ophthalmology', 'Webcast', 'Rare Disease'],
+    imageUrl: './images/portfolio/lems-management.jpg'
+  },
+  {
+    id: '8',
+    title: 'Strategies for Ocular Surface Health',
+    category: 'CE Webcast',
+    description: 'Best practices for diagnosing blepharitis and developing individualized treatment plans for ocular surface health and lid margin disease management.',
+    tags: ['Optometry', 'Ocular Surface', 'Webcast', 'CE'],
+    imageUrl: './images/portfolio/ocular-surface.jpg'
+  },
+  {
+    id: '9',
+    title: 'Targeting DED: Optimal Results',
+    category: 'CE Webcast',
+    description: 'Comprehensive review of Dry Eye Disease pathophysiology and targeted therapeutic approaches to improve patient quality of life and clinical outcomes.',
+    tags: ['Optometry', 'Dry Eye', 'Webcast', 'CE'],
+    imageUrl: './images/portfolio/targeting-ded.jpg'
   },
 ];
 
