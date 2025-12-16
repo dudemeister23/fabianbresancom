@@ -25,10 +25,10 @@ export const Portfolio: React.FC = () => {
           {PORTFOLIO_SAMPLES.map((item) => (
             <div key={item.id} className="group relative bg-slate-50 rounded-xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
               {/* Card Image Placeholder */}
-              <div className="h-48 bg-slate-200 relative overflow-hidden flex-shrink-0">
+              <div className="h-64 bg-slate-200 relative overflow-hidden flex-shrink-0">
                 {item.imageUrl ? (
-                  <img 
-                    src={item.imageUrl} 
+                  <img
+                    src={item.imageUrl}
                     alt={item.title}
                     className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     onError={(e) => {
@@ -39,7 +39,7 @@ export const Portfolio: React.FC = () => {
                     }}
                   />
                 ) : null}
-                
+
                 {/* Fallback Icon (shown if no image or image error) */}
                 <div className="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-200 -z-10 group-has-[img[style*='none']]:z-0 group-has-[img:not([src])]:z-0">
                   <Icon name="FileText" size={48} className="opacity-20" />
@@ -71,7 +71,7 @@ export const Portfolio: React.FC = () => {
               </div>
             </div>
           ))}
-          
+
           {/* Call to Action Card for more work */}
           <div className="bg-slate-900 rounded-xl p-8 flex flex-col justify-center items-center text-center text-white border border-slate-800 h-full min-h-[400px]">
             <Icon name="Layers" size={48} className="text-primary-500 mb-4" />

@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
         {/* User Headshot with styling */}
         <div className="hidden md:block relative h-[600px] w-full bg-slate-200 rounded-2xl overflow-hidden shadow-2xl">
            <img 
-            src="image.png" 
+            src="/images/hero.png" 
             alt="Fabian Bresan, MD" 
             className="object-cover w-full h-full object-top hover:scale-105 transition-transform duration-700"
           />

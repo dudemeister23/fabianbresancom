@@ -114,7 +114,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CME Monograph',
     description: 'A proactive care approach monograph reviewing clinical features of TED, teprotumumab data, and multidisciplinary management strategies for oculoplastic surgeons and ophthalmologists.',
     tags: ['Ophthalmology', 'CME', 'Monograph', 'Endocrinology'],
-    imageUrl: './images/portfolio/thyroid-eye-disease.jpg'
+    imageUrl: '/images/portfolio/portfolio-01.jpg'
   },
   {
     id: '2',
@@ -122,7 +122,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CME Webcast',
     description: 'Expert panel discussion on the latest advancements in port delivery systems and their impact on treatment burden in retinal diseases.',
     tags: ['Ophthalmology', 'Retina', 'Webcast', 'CME'],
-    imageUrl: './images/portfolio/continuous-drug-delivery.jpg'
+    imageUrl: '/images/portfolio/portfolio-02.jpg'
   },
   {
     id: '3',
@@ -130,7 +130,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CME Monograph',
     description: 'Systematic approach to managing neuropsychiatric manifestations in PD, including psychosis and dementia, through evidence-based treatment plans and case studies.',
     tags: ['Neurology', 'Psychiatry', 'Monograph', 'CME'],
-    imageUrl: './images/portfolio/parkinsons-care.jpg'
+    imageUrl: '/images/portfolio/portfolio-03.png'
   },
   {
     id: '4',
@@ -138,7 +138,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CE Webcast',
     description: 'Exploration of new and emerging treatments for GA, focusing on pathophysiology, imaging features, and complement inhibition therapies to slow progression.',
     tags: ['Ophthalmology', 'Optometry', 'Webcast', 'CE'],
-    imageUrl: './images/portfolio/geographic-atrophy.jpg'
+    imageUrl: '/images/portfolio/portfolio-04.png'
   },
   {
     id: '5',
@@ -146,7 +146,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CME Podcast',
     description: 'Audio-visual podcast discussing the role of evaporation in DED, meibomian gland function, and designing evidence-based treatment plans.',
     tags: ['Ophthalmology', 'Podcast', 'CME', 'Dry Eye'],
-    imageUrl: './images/portfolio/dry-eye-podcast.jpg'
+    imageUrl: '/images/portfolio/portfolio-05.png'
   },
   {
     id: '6',
@@ -154,7 +154,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'Aesthetic Webcast',
     description: 'Expert guidance on injection techniques and product selection for perioral and infraorbital rejuvenation utilizing hyaluronic acid fillers.',
     tags: ['Dermatology', 'Aesthetics', 'Webcast', 'CME'],
-    imageUrl: './images/portfolio/ha-fillers.jpg'
+    imageUrl: '/images/portfolio/portfolio-06.png'
   },
   {
     id: '7',
@@ -162,7 +162,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CE Webcast',
     description: 'Guide to identifying ocular symptoms of Lambert-Eaton myasthenic syndrome (LEMS) and coordinating care between optometry and neurology.',
     tags: ['Neurology', 'Neuro-Ophthalmology', 'Webcast', 'Rare Disease'],
-    imageUrl: './images/portfolio/lems-management.jpg'
+    imageUrl: '/images/portfolio/portfolio-07.png'
   },
   {
     id: '8',
@@ -170,7 +170,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CE Webcast',
     description: 'Best practices for diagnosing blepharitis and developing individualized treatment plans for ocular surface health and lid margin disease management.',
     tags: ['Optometry', 'Ocular Surface', 'Webcast', 'CE'],
-    imageUrl: './images/portfolio/ocular-surface.jpg'
+    imageUrl: '/images/portfolio/ocular-surface.jpg'
   },
   {
     id: '9',
@@ -178,7 +178,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CE Webcast',
     description: 'Comprehensive review of Dry Eye Disease pathophysiology and targeted therapeutic approaches to improve patient quality of life and clinical outcomes.',
     tags: ['Optometry', 'Dry Eye', 'Webcast', 'CE'],
-    imageUrl: './images/portfolio/targeting-ded.jpg'
+    imageUrl: '/images/portfolio/targeting-ded.jpg'
   },
 ];
 
