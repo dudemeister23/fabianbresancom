@@ -7,7 +7,7 @@ export const Contact: React.FC = () => {
     <section id="contact" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
-          
+
           {/* Contact Info Sidebar */}
           <div className="bg-slate-900 text-white p-10 md:w-2/5 flex flex-col justify-between">
             <div>
@@ -15,7 +15,7 @@ export const Contact: React.FC = () => {
               <p className="text-slate-300 mb-8 leading-relaxed">
                 Available for freelance projects, consulting, and strategic partnerships. I typically respond within 24 hours.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-white/10 p-2 rounded-lg text-primary-400">
@@ -54,9 +54,9 @@ export const Contact: React.FC = () => {
             </div>
 
             <div className="mt-12 md:mt-0 pt-8 border-t border-slate-800">
-               <p className="text-xs text-slate-500">
-                 Fabian Bresan, MD
-               </p>
+              <p className="text-xs text-slate-500">
+                Fabian Bresan, MD
+              </p>
             </div>
           </div>
 
@@ -67,28 +67,28 @@ export const Contact: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
+                  <input
+                    type="text"
+                    id="name"
                     className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
+                  <input
+                    type="email"
+                    id="email"
                     className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                     placeholder="john@company.com"
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">Subject</label>
-                <select 
-                  id="subject" 
+                <select
+                  id="subject"
                   className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                 >
                   <option>Medical Education Strategy</option>
@@ -100,19 +100,19 @@ export const Contact: React.FC = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">Message</label>
-                <textarea 
-                  id="message" 
+                <textarea
+                  id="message"
                   rows={4}
                   className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                   placeholder="Tell me about your project timeline and requirements..."
                 ></textarea>
               </div>
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="w-full bg-primary-600 text-white font-semibold py-4 rounded-lg hover:bg-primary-700 transition-colors shadow-lg shadow-primary-200"
               >
-                SendMessage
+                Send Message
               </button>
             </form>
           </div>

@@ -120,14 +120,6 @@ export const EXPERIENCE: ExperienceItem[] = [
 
 export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
   {
-    id: '1',
-    title: 'Comanaging Thyroid Eye Disease',
-    category: 'CME Monograph',
-    description: 'A proactive care approach monograph reviewing clinical features of TED, teprotumumab data, and multidisciplinary management strategies for oculoplastic surgeons and ophthalmologists.',
-    tags: ['Ophthalmology', 'CME', 'Monograph', 'Endocrinology'],
-    imageUrl: '/images/portfolio/portfolio-01.jpg'
-  },
-  {
     id: '2',
     title: 'Continuous Drug Delivery in nAMD and DME',
     category: 'CME Webcast',
@@ -168,20 +160,12 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     imageUrl: '/images/portfolio/portfolio-06.png'
   },
   {
-    id: '7',
-    title: 'Seeing Through LEMS: Early Detection',
-    category: 'CE Webcast',
-    description: 'Guide to identifying ocular symptoms of Lambert-Eaton myasthenic syndrome (LEMS) and coordinating care between optometry and neurology.',
-    tags: ['Neurology', 'Neuro-Ophthalmology', 'Webcast', 'Rare Disease'],
-    imageUrl: '/images/portfolio/portfolio-07.png'
-  },
-  {
     id: '8',
     title: 'Strategies for Ocular Surface Health',
     category: 'CE Webcast',
     description: 'Best practices for diagnosing blepharitis and developing individualized treatment plans for ocular surface health and lid margin disease management.',
     tags: ['Optometry', 'Ocular Surface', 'Webcast', 'CE'],
-    imageUrl: '/images/portfolio/ocular-surface.jpg'
+    imageUrl: '/images/portfolio/portfolio-07.png'
   },
   {
     id: '9',
@@ -189,7 +173,21 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     category: 'CE Webcast',
     description: 'Comprehensive review of Dry Eye Disease pathophysiology and targeted therapeutic approaches to improve patient quality of life and clinical outcomes.',
     tags: ['Optometry', 'Dry Eye', 'Webcast', 'CE'],
-    imageUrl: '/images/portfolio/targeting-ded.jpg'
+    imageUrl: '/images/portfolio/portfolio-01.jpg'
+  },
+  {
+    id: '1',
+    title: 'Comanaging Thyroid Eye Disease',
+    category: 'CME Monograph',
+    description: 'A proactive care approach monograph reviewing clinical features of TED, teprotumumab data, and multidisciplinary management strategies for oculoplastic surgeons and ophthalmologists.',
+    tags: ['Ophthalmology', 'CME', 'Monograph', 'Endocrinology'],
+  },
+  {
+    id: '7',
+    title: 'Seeing Through LEMS: Early Detection',
+    category: 'CE Webcast',
+    description: 'Guide to identifying ocular symptoms of Lambert-Eaton myasthenic syndrome (LEMS) and coordinating care between optometry and neurology.',
+    tags: ['Neurology', 'Neuro-Ophthalmology', 'Webcast', 'Rare Disease'],
   },
 ];
 
