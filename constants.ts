@@ -9,7 +9,7 @@ export const CONTACT_INFO: ContactInfo = {
 
 export const SERVICES: ServiceItem[] = [
   {
-    title: 'Strategic Content Development',
+    title: 'Scientific Strategy',
     description: 'Expert-led gap analyses and needs assessments to drive curriculum design.',
     iconName: 'Target',
     details: [
@@ -42,8 +42,8 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    title: 'Scientific Consulting',
-    description: 'Therapeutic expertise bridging clinical authority with commercial goals.',
+    title: 'Therapeutic Expertise',
+    description: 'Therapeutic expertise bridging clinical authority with strategic objectives.',
     iconName: 'Brain',
     details: [
       'KOL & Faculty Management',
@@ -60,11 +60,11 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'CIQ of Palm Beach',
     location: 'Palm Beach Gardens, FL',
     period: 'May 2025 – Present',
-    description: 'Leveraging entrepreneurial opportunity to build and scale an operational infrastructure, mastering P&L and resource management.',
+    description: 'Leveraging entrepreneurial opportunity to build and scale an operational infrastructure, mastering resource management and operational scalability.',
     achievements: [
-      'Manage full P&L oversight, strategic forecasting, and investor relations for a capital-intensive business unit.',
+      'Manage comprehensive operational oversight, strategic forecasting, and stakeholder relations for a capital-intensive business unit.',
       'Direct complex, multi-phase client projects; implemented SOPs that reduced project turnaround time.',
-      'Recruited and lead a cross-functional team, establishing a culture of accountability.',
+      'Recruited and lead a cross-functional team of project coordinators and technical staff, establishing a culture of accountability and timeline adherence.',
       'Negotiate high-value contracts and manage subcontractor partnerships.',
     ],
   },
@@ -73,12 +73,12 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'MedEdicus',
     location: 'Remote',
     period: 'Dec. 2023 – Apr. 2025',
-    description: 'Operated as the strategic lead for a portfolio of CME programs, ensuring scientific accuracy and alignment with commercial goals.',
+    description: 'Operated as the strategic lead for a portfolio of CME programs, ensuring scientific accuracy and alignment with strategic objectives.',
     achievements: [
-      'Directed gap analyses for high-priority areas (Thyroid Eye Disease, NMOSD, Dry Eye Disease).',
-      'Cultivated relationships with top-tier KOLs, ensuring alignment with emerging clinical data.',
-      'Architected multi-format educational initiatives resulting in increased learner engagement.',
-      'Partnered with grant, accreditation, and events teams to ensure 100% on-time delivery.',
+      'Directed comprehensive gap analyses and needs assessments for high-priority areas (Thyroid Eye Disease, NMOSD, Dry Eye Disease), directly influencing the curriculum design for numerous accredited programs.',
+      'Cultivated and managed relationships with top-tier KOLs, ensuring faculty alignment with emerging clinical data and guidelines.',
+      'Architected multi-format educational initiatives resulting in increased learner engagement and retention.',
+      'Partnered with grant, accreditation, and events teams to ensure 100% on-time delivery of compliant CME programs while maintaining strict budget adherence.',
     ],
   },
   {
@@ -88,9 +88,9 @@ export const EXPERIENCE: ExperienceItem[] = [
     period: 'Nov. 2022 – Dec. 2023',
     description: '',
     achievements: [
-      'Developed educational agendas and complex case studies for live symposia.',
-      'Provided on-site medical direction for live educational programs.',
-      'Spearheaded restructuring of digital content formats to expand distribution channels.',
+      'Developed educational agendas and complex case studies for live symposia, translating high-science data into practical clinical applications.',
+      'Provided on-site medical direction for live educational programs, managing faculty requirements and real-time scientific inquiries.',
+      'Spearheaded restructuring of digital content formats, significantly expanding distribution channels and maximizing the educational impact of funded programs.',
     ],
   },
   {
@@ -100,9 +100,20 @@ export const EXPERIENCE: ExperienceItem[] = [
     period: 'Oct. 2020 – Nov. 2022',
     description: '',
     achievements: [
-      'Conceptualized and authored references for 30+ grant applications, securing essential funding.',
-      'Served as editorial lead for high-impact scientific publications.',
-      'Conducted exhaustive literature reviews in Neurology and Psychiatry.',
+      'Conceptualized and authored clinical references for 30+ grant applications, effectively securing essential research funding.',
+      'Served as editorial lead for high-impact scientific publications, ensuring data integrity and narrative clarity for complex neurological research.',
+      'Conducted exhaustive literature reviews in Neurology and Psychiatry to support evidence-based content generation.',
+    ],
+  },
+  {
+    role: 'Medical Intern',
+    company: 'Boca Raton Regional Hospital',
+    location: 'Boca Raton, FL',
+    period: 'Nov. 2019 – Oct. 2020',
+    description: '',
+    achievements: [
+      'Completed clinical rotations in Neurology, Surgery, and Internal Medicine.',
+      'Delivered oral presentations on updated guidelines and clinical data to department leadership.',
     ],
   },
 ];
@@ -188,6 +199,6 @@ export const EDUCATION = [
     institution: 'Goethe University',
     location: 'Frankfurt am Main, Germany',
     year: '2020',
-    details: 'Thesis on multi-resistant bacteria risks. Experience with statistical analysis and clinical databases.',
+    details: 'Thesis: Investigated travel as a risk factor for acquiring multi-resistant bacteria. Research: Developed patient interview forms, conducted statistical analysis, and managed a custom clinical database.',
   },
 ];

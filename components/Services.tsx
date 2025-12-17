@@ -10,14 +10,14 @@ export const Services: React.FC = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">Core Competencies</h2>
           <div className="w-20 h-1 bg-primary-600 mx-auto mb-6"></div>
           <p className="text-slate-600 text-lg">
-            Leveraging deep therapeutic expertise in Neurology, Ophthalmology, and Psychiatry to deliver precision content and strategy.
+            Leveraging deep therapeutic expertise in Neurology, Ophthalmology, Psychiatry, Dermatology, and Internal Medicine to deliver precision content and strategy.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {SERVICES.map((service, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="group bg-slate-50 border border-slate-100 rounded-xl p-8 hover:shadow-xl hover:border-primary-200 transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="w-14 h-14 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6 text-primary-700 group-hover:bg-primary-600 group-hover:text-white transition-colors">
@@ -37,6 +37,6 @@ export const Services: React.FC = () => {
           ))}
         </div>
       </div>
-    </section>
+    </section >
   );
 };
