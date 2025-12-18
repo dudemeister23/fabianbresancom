@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon } from './Icon';
+import { CONTACT_INFO } from '../constants';
 
 export const Hero: React.FC = () => {
   return (
@@ -39,6 +40,13 @@ export const Hero: React.FC = () => {
               className="px-8 py-4 bg-white text-slate-900 border border-slate-200 font-medium rounded-lg hover:border-primary-500 hover:text-primary-800 transition-all text-center flex items-center justify-center gap-2"
             >
               View Portfolio <Icon name="ChevronRight" size={16} />
+            </a>
+            <a
+              href={CONTACT_INFO.resumeUrl}
+              download
+              className="px-8 py-4 bg-primary-50 text-primary-900 border border-primary-100 font-medium rounded-lg hover:bg-primary-100 transition-all text-center flex items-center justify-center gap-2"
+            >
+              Download Resume <Icon name="Download" size={18} />
             </a>
           </div>
 

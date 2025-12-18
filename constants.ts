@@ -5,6 +5,7 @@ export const CONTACT_INFO: ContactInfo = {
   phone: '(561) 788-4408',
   location: 'Palm Beach Gardens, FL',
   linkedin: 'https://linkedin.com/in/fabianbresan/',
+  resumeUrl: '/resume.pdf',
 };
 
 export const SERVICES: ServiceItem[] = [
