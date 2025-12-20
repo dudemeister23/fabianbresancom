@@ -12,20 +12,18 @@ export const Hero: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-left space-y-8 animate-fade-in-up">
           <div className="inline-block px-4 py-1 bg-primary-50 border border-primary-100 text-primary-800 rounded-full text-sm font-semibold tracking-wide">
-            AVAILABLE FOR FREELANCE & CONSULTING
+            AVAILABLE FOR STRATEGIC LEADERSHIP & CONSULTING
           </div>
 
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-tight">
-            Scientific Rigor.<br />
+            Scientific Strategy.<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-800 to-primary-500">
-              Strategic Impact.
+              Commercial Growth.
             </span>
           </h1>
 
           <p className="text-xl text-slate-600 max-w-lg leading-relaxed">
-            I bridge the gap between clinical authority and educational strategy.
-            MD-credentialed expertise for high-impact medical communications,
-            CME programming, and strategic content development.
+            MD-credentialed Medical Director bridging the gap between clinical data and business objectives for high-value accounts.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -39,7 +37,7 @@ export const Hero: React.FC = () => {
               href="#portfolio"
               className="px-8 py-4 bg-white text-slate-900 border border-slate-200 font-medium rounded-lg hover:border-primary-500 hover:text-primary-800 transition-all text-center flex items-center justify-center gap-2"
             >
-              View Portfolio <Icon name="ChevronRight" size={16} />
+              View Strategic Portfolio <Icon name="ChevronRight" size={16} />
             </a>
             <a
               href={CONTACT_INFO.resumeUrl}
@@ -53,15 +51,15 @@ export const Hero: React.FC = () => {
           <div className="flex items-center gap-6 pt-8 text-slate-500 text-sm">
             <div className="flex items-center gap-2">
               <Icon name="Target" size={18} className="text-primary-600" />
-              <span>Gap Analysis</span>
+              <span>Commercial Strategy</span>
             </div>
             <div className="flex items-center gap-2">
               <Icon name="Brain" size={18} className="text-primary-600" />
-              <span>Instructional Design</span>
+              <span>Scientific Leadership</span>
             </div>
             <div className="flex items-center gap-2">
-              <Icon name="FileText" size={18} className="text-primary-600" />
-              <span>Publication Planning</span>
+              <Icon name="Layers" size={18} className="text-primary-600" />
+              <span>Operations</span>
             </div>
           </div>
         </div>
@@ -75,9 +73,9 @@ export const Hero: React.FC = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
             <div className="bg-slate-900/60 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-lg">
-              <p className="font-serif text-lg italic mb-2">"Elevating medical education through scientific rigor and strategic vision."</p>
+              <p className="font-serif text-lg italic mb-2">"Expert in bridging the gap between clinical data and business objectives."</p>
               <p className="font-bold text-sm text-primary-200">FABIAN BRESAN, MD</p>
-              <p className="text-xs text-slate-300 mt-1 tracking-wider">MEDICAL EDUCATION STRATEGIST & SCIENTIFIC DIRECTOR</p>
+              <p className="text-xs text-slate-300 mt-1 tracking-wider">MEDICAL STRATEGIST & CLIENT ENGAGEMENT DIRECTOR</p>
             </div>
           </div>
         </div>

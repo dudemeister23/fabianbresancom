@@ -30,8 +30,7 @@ export const Portfolio: React.FC = () => {
                   <img
                     src={item.imageUrl}
                     alt={item.title}
-                    className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${item.id === '3' || item.id === '9' ? 'object-contain' : 'object-cover object-top'
-                      }`}
+                    className={`w-full h-full ${(item.id === '1' || item.id === '8' || item.id === '9') ? 'object-contain bg-gray-50' : 'object-cover'}`}
                     onError={(e) => {
                       // Fallback if image fails to load
                       const target = e.target as HTMLImageElement;

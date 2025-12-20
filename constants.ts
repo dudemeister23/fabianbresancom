@@ -10,76 +10,75 @@ export const CONTACT_INFO: ContactInfo = {
 
 export const SERVICES: ServiceItem[] = [
   {
-    title: 'Scientific Strategy',
-    description: 'Expert-led gap analyses and needs assessments to drive curriculum design.',
+    title: 'Commercial Strategy',
+    description: 'Driving revenue through strategic grant development and client relationship management.',
     iconName: 'Target',
     details: [
-      'Comprehensive Gap Analysis',
-      'Needs Assessments',
-      'Curriculum Design',
-      'Instructional Design',
+      'Account Growth & Retention',
+      'Strategic Forecasting',
+      'Grantor/Client Relations',
+      'Revenue Optimization',
     ],
   },
   {
-    title: 'Medical Communications',
-    description: 'High-science data translation into practical clinical applications and deliverables.',
-    iconName: 'FileText',
+    title: 'Scientific Leadership',
+    description: 'Bridging clinical authority with strategic objectives through expert engagement and analysis.',
+    iconName: 'Brain',
     details: [
-      'Slide Decks & Storyboarding',
-      'Publication Planning',
-      'Grant Development',
-      'Omnichannel Optimization',
+      'KOL & Faculty Engagement',
+      'Scientific Gap Analysis',
+      'Therapeutic Strategy',
+      'Clinical Data Alignment',
     ],
   },
   {
-    title: 'Program Architecture',
-    description: 'Designing multi-format educational initiatives that engage and retain learners.',
+    title: 'Operations',
+    description: 'Expertise in P&L management, cross-functional leadership, and operational efficiency.',
     iconName: 'Layers',
     details: [
-      'Live Symposia Agendas',
-      'Webcasts & Podcasts',
-      'Interactive Modules',
-      'Complex Case Studies',
+      'P&L Management',
+      'Cross-Functional Leadership',
+      'Budget Adherence',
+      'SOP & Workflow Optimization',
     ],
   },
   {
     title: 'Therapeutic Expertise',
-    description: 'Therapeutic expertise bridging clinical authority with strategic objectives.',
-    iconName: 'Brain',
+    description: 'Deep clinical authority in Neurology, Ophthalmology, Psychiatry, and more.',
+    iconName: 'Briefcase',
     details: [
-      'KOL & Faculty Management',
-      'Scientific Accuracy Review',
-      'ACCME Compliance',
-      'Strategic Forecasting',
+      'Neurology & Psychiatry',
+      'Ophthalmology & Optometry',
+      'Aesthetics (HA Fillers)',
+      'Rare Disease/LEMS',
     ],
   },
 ];
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    role: 'Principal / Director of Operations',
+    role: 'Principal / Operations Lead',
     company: 'CIQ of Palm Beach',
     location: 'Palm Beach Gardens, FL',
     period: 'May 2025 – Present',
-    description: 'Leveraging entrepreneurial opportunity to build and scale an operational infrastructure, mastering resource management and operational scalability.',
+    description: 'Building and scaling operational infrastructure for a private commercial unit, focusing on financial efficiency and process optimization.',
     achievements: [
-      'Manage comprehensive operational oversight, strategic forecasting, and stakeholder relations for a capital-intensive business unit.',
-      'Direct complex, multi-phase client projects; implemented SOPs that reduced project turnaround time.',
-      'Recruited and lead a cross-functional team of project coordinators and technical staff, establishing a culture of accountability and timeline adherence.',
-      'Negotiate high-value contracts and manage subcontractor partnerships.',
+      'Manage full P&L oversight and strategic forecasting for a capital-intensive business unit.',
+      'Directed complex client projects and implemented SOPs that reduced turnaround time and streamlined workflows.',
+      'Recruited a cross-functional team and negotiated high-value contracts with subcontractors to optimize profit margins.',
     ],
   },
   {
-    role: 'Senior Content Manager',
+    role: 'Senior Manager, Scientific Strategy & Content',
     company: 'MedEdicus',
     location: 'Remote',
     period: 'Dec. 2023 – Apr. 2025',
-    description: 'Operated as the strategic lead for a portfolio of CME programs, ensuring scientific accuracy and alignment with strategic objectives.',
+    description: 'Strategic lead for a portfolio of accredited programs, serving as the primary bridge between scientific data and commercial execution.',
     achievements: [
-      'Directed comprehensive gap analyses and needs assessments for high-priority areas (Thyroid Eye Disease, NMOSD, Dry Eye Disease), directly influencing the curriculum design for numerous accredited programs.',
-      'Cultivated and managed relationships with top-tier KOLs, ensuring faculty alignment with emerging clinical data and guidelines.',
-      'Architected multi-format educational initiatives resulting in increased learner engagement and retention.',
-      'Partnered with grant, accreditation, and events teams to ensure 100% on-time delivery of compliant CME programs while maintaining strict budget adherence.',
+      'Strategic Account Leadership: Directed the scientific strategy for high-priority accounts, securing funding from major grantors (Amgen, Iveric Bio, Bausch + Lomb).',
+      'KOL & Faculty Management: Owned relationships with top-tier KOLs, managing expectations and aligning clinical data for on-site/virtual deliverables.',
+      'Program Architecture & Revenue: Architected multi-format initiatives (webcasts, podcasts) that maximized reach and led to repeat business.',
+      'Cross-Functional Execution: Partnered with grant, accreditation, and events teams for 100% on-time delivery of compliant programs.',
     ],
   },
   {
@@ -87,11 +86,10 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'MedEdicus',
     location: 'Remote',
     period: 'Nov. 2022 – Dec. 2023',
-    description: '',
     achievements: [
-      'Developed educational agendas and complex case studies for live symposia, translating high-science data into practical clinical applications.',
-      'Provided on-site medical direction for live educational programs, managing faculty requirements and real-time scientific inquiries.',
-      'Spearheaded restructuring of digital content formats, significantly expanding distribution channels and maximizing the educational impact of funded programs.',
+      'Symposia Leadership: Developed agendas and translated high-science data into practical clinical applications for live symposia.',
+      'On-Site Medical Direction: Served as the on-site "Face of the Agency," managing real-time scientific inquiries and faculty needs.',
+      'Digital Optimization: Spearheaded the restructuring of digital formats to expand distribution channels and maximize program ROI.',
     ],
   },
   {
@@ -99,11 +97,9 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'Max Planck Florida Institute for Neuroscience',
     location: 'Jupiter, FL',
     period: 'Oct. 2020 – Nov. 2022',
-    description: '',
     achievements: [
-      'Conceptualized and authored clinical references for 30+ grant applications, effectively securing essential research funding.',
-      'Served as editorial lead for high-impact scientific publications, ensuring data integrity and narrative clarity for complex neurological research.',
-      'Conducted exhaustive literature reviews in Neurology and Psychiatry to support evidence-based content generation.',
+      'Grant Strategy: Conceptualized clinical narratives for 30+ grant applications, successfully securing essential research funding.',
+      'Scientific Communication: Served as editorial lead for high-impact publications, ensuring narrative clarity for complex neurological research.',
     ],
   },
   {
@@ -111,10 +107,8 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'Boca Raton Regional Hospital',
     location: 'Boca Raton, FL',
     period: 'Nov. 2019 – Oct. 2020',
-    description: '',
     achievements: [
       'Completed clinical rotations in Neurology, Surgery, and Internal Medicine.',
-      'Delivered oral presentations on updated guidelines and clinical data to department leadership.',
     ],
   },
 ];
@@ -131,10 +125,9 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
   {
     id: '3',
     title: 'Person-Centered Care in Parkinson’s',
-    category: 'CME Monograph',
-    description: 'Systematic approach to managing neuropsychiatric manifestations in PD, including psychosis and dementia, through evidence-based treatment plans and case studies.',
+    category: 'CE Webcast',
+    description: 'Exploration of new and emerging treatments for UA, focusing on pathophysiology, imaging features, and complement inhibition therapies to slow progression.',
     tags: ['Neurology', 'Psychiatry', 'Monograph', 'CME'],
-    imageUrl: '/images/portfolio/portfolio-03.png'
   },
   {
     id: '4',
@@ -181,7 +174,8 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     title: 'Comanaging Thyroid Eye Disease',
     category: 'CME Monograph',
     description: 'A proactive care approach monograph reviewing clinical features of TED, teprotumumab data, and multidisciplinary management strategies for oculoplastic surgeons and ophthalmologists.',
-    tags: ['Ophthalmology', 'CME', 'Monograph', 'Endocrinology'],
+    imageUrl: '/images/portfolio/portfolio-03.png',
+    tags: ['Ophthalmology', 'TED', 'Monograph', 'CME'],
   },
   {
     id: '7',
@@ -198,6 +192,6 @@ export const EDUCATION = [
     institution: 'Goethe University',
     location: 'Frankfurt am Main, Germany',
     year: '2020',
-    details: 'Thesis: Investigated travel as a risk factor for acquiring multi-resistant bacteria. Research: Developed patient interview forms, conducted statistical analysis, and managed a custom clinical database.',
+    details: 'Thesis: Investigated travel as a risk factor for acquiring multi-resistant bacteria.',
   },
 ];
