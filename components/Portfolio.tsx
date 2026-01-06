@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PORTFOLIO_SAMPLES } from '../constants';
 import { Icon } from './Icon';
 
 export const Portfolio: React.FC = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const INITIAL_COUNT = 6;
+
+  const hasMoreItems = PORTFOLIO_SAMPLES.length > INITIAL_COUNT;
+
   return (
     <section id="portfolio" className="py-24 bg-white relative">
       <div className="container mx-auto px-6">
@@ -15,15 +20,27 @@ export const Portfolio: React.FC = () => {
             </p>
           </div>
           <div className="mt-6 md:mt-0">
-            <button className="px-6 py-3 border-2 border-slate-900 text-slate-900 font-semibold rounded-lg hover:bg-slate-900 hover:text-white transition-colors flex items-center gap-2">
+            <button className="px-6 py-3 border-2 border-slate-900 text-slate-900 font-semibold rounded-2xl hover:bg-slate-900 hover:text-white transition-colors flex items-center gap-2">
               <Icon name="Download" size={18} /> Request Full Portfolio
             </button>
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {PORTFOLIO_SAMPLES.map((item) => (
-            <div key={item.id} className="group relative bg-slate-50 rounded-xl overflow-hidden border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+          {PORTFOLIO_SAMPLES.map((item, index) => (
+            <div
+              key={item.id}
+              className={`group relative bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl hover:scale-[1.02] transition-all duration-500 flex flex-col h-full ${index >= INITIAL_COUNT
+                ? isExpanded
+                  ? 'opacity-100 translate-y-0 max-h-[800px]'
+                  : 'opacity-0 translate-y-8 max-h-0 overflow-hidden pointer-events-none'
+                : ''
+                }`}
+              style={{
+                transitionProperty: 'opacity, transform, max-height',
+                transitionDelay: index >= INITIAL_COUNT ? `${(index - INITIAL_COUNT) * 75}ms` : '0ms',
+              }}
+            >
               {/* Card Image Placeholder */}
               <div className="h-64 bg-slate-200 relative overflow-hidden flex-shrink-0">
                 {item.imageUrl ? (
@@ -45,10 +62,7 @@ export const Portfolio: React.FC = () => {
                   <Icon name="FileText" size={48} className="opacity-20" />
                 </div>
 
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-primary-900/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
-                  <span className="text-white font-medium border border-white/30 px-4 py-2 rounded backdrop-blur-sm cursor-pointer">View Details</span>
-                </div>
+
               </div>
 
               <div className="p-6 flex flex-col flex-grow">
@@ -63,7 +77,7 @@ export const Portfolio: React.FC = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mt-auto">
                   {item.tags.map((tag, i) => (
-                    <span key={i} className="text-xs text-slate-500 bg-white border border-slate-200 px-2 py-1 rounded">
+                    <span key={i} className="text-xs text-slate-500 bg-white border border-slate-200 px-2 py-1 rounded-full">
                       #{tag}
                     </span>
                   ))}
@@ -71,19 +85,27 @@ export const Portfolio: React.FC = () => {
               </div>
             </div>
           ))}
-
-          {/* Call to Action Card for more work */}
-          <div className="bg-slate-900 rounded-xl p-8 flex flex-col justify-center items-center text-center text-white border border-slate-800 h-full min-h-[400px]">
-            <Icon name="Layers" size={48} className="text-primary-500 mb-4" />
-            <h3 className="font-serif text-xl font-bold mb-2">More Available</h3>
-            <p className="text-slate-400 text-sm mb-6">
-              Due to confidentiality agreements, many projects cannot be publicly displayed. Contact me for a private walkthrough.
-            </p>
-            <a href="#contact" className="text-primary-400 font-semibold hover:text-white transition-colors flex items-center gap-1">
-              Contact Me <Icon name="ChevronRight" size={16} />
-            </a>
-          </div>
         </div>
+
+        {/* Show More / Show Less Button */}
+        {hasMoreItems && (
+          <div className="flex justify-center mt-10">
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="px-8 py-4 bg-primary-600 text-white font-semibold rounded-2xl hover:bg-primary-700 transition-colors flex items-center gap-2"
+            >
+              {isExpanded ? (
+                <>
+                  <Icon name="ChevronUp" size={18} /> Show Less
+                </>
+              ) : (
+                <>
+                  <Icon name="ChevronDown" size={18} /> Show More ({PORTFOLIO_SAMPLES.length - INITIAL_COUNT} more)
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

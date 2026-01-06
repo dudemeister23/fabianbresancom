@@ -4,76 +4,73 @@ import { CONTACT_INFO } from '../constants';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-50">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-50"></div>
-      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-50"></div>
+    <section
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-900"
+      style={{ backgroundImage: 'url(/images/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-slate-900/40"></div>
 
       <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-left space-y-8 animate-fade-in-up">
-          <div className="inline-block px-4 py-1 bg-primary-50 border border-primary-100 text-primary-800 rounded-full text-sm font-semibold tracking-wide">
+          <div className="inline-block px-4 py-1 bg-primary-500/20 border border-primary-400/30 text-primary-300 rounded-full text-sm font-semibold tracking-wide">
             AVAILABLE FOR STRATEGIC LEADERSHIP & CONSULTING
           </div>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-tight">
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
             Scientific Strategy.<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-800 to-primary-500">
-              Commercial Growth.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300">
+              Medical Communications.
             </span>
           </h1>
 
-          <p className="text-xl text-slate-600 max-w-lg leading-relaxed">
-            MD-credentialed Medical Director bridging the gap between clinical data and business objectives for high-value accounts.
+          <p className="text-xl text-slate-300 max-w-lg leading-relaxed">
+            MD-credentialed Medical Director bridging the gap between clinical data and business objectives.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a
               href="#contact"
-              className="px-8 py-4 bg-slate-900 text-white font-medium rounded-lg shadow-lg hover:bg-primary-800 transition-all hover:shadow-xl text-center"
+              className="flex-1 px-8 py-4 bg-white text-slate-900 font-medium rounded-2xl shadow-lg hover:bg-primary-100 transition-all hover:shadow-xl text-center flex items-center justify-center"
             >
               Work With Me
             </a>
-            <a
-              href="#portfolio"
-              className="px-8 py-4 bg-white text-slate-900 border border-slate-200 font-medium rounded-lg hover:border-primary-500 hover:text-primary-800 transition-all text-center flex items-center justify-center gap-2"
-            >
-              View Strategic Portfolio <Icon name="ChevronRight" size={16} />
-            </a>
+
             <a
               href={CONTACT_INFO.resumeUrl}
               download
-              className="px-8 py-4 bg-primary-50 text-primary-900 border border-primary-100 font-medium rounded-lg hover:bg-primary-100 transition-all text-center flex items-center justify-center gap-2"
+              className="flex-1 px-8 py-4 bg-slate-100 text-slate-900 border border-slate-200 font-medium rounded-2xl hover:bg-white transition-all text-center flex items-center justify-center gap-2"
             >
               Download Resume <Icon name="Download" size={18} />
             </a>
           </div>
 
-          <div className="flex items-center gap-6 pt-8 text-slate-500 text-sm">
+          <div className="flex items-center gap-6 pt-8 text-slate-400 text-sm">
             <div className="flex items-center gap-2">
-              <Icon name="Target" size={18} className="text-primary-600" />
-              <span>Commercial Strategy</span>
+              <Icon name="Target" size={18} className="text-primary-400" />
+              <span>Communications Strategy</span>
             </div>
             <div className="flex items-center gap-2">
-              <Icon name="Brain" size={18} className="text-primary-600" />
+              <Icon name="Brain" size={18} className="text-primary-400" />
               <span>Scientific Leadership</span>
             </div>
             <div className="flex items-center gap-2">
-              <Icon name="Layers" size={18} className="text-primary-600" />
+              <Icon name="Layers" size={18} className="text-primary-400" />
               <span>Operations</span>
             </div>
           </div>
         </div>
 
         {/* User Headshot with styling */}
-        <div className="hidden md:block relative h-[600px] w-full bg-slate-200 rounded-2xl overflow-hidden shadow-2xl">
+        <div className="hidden md:block relative h-[600px] w-full bg-slate-200 rounded-[2rem] overflow-hidden shadow-2xl">
           <img
             src="/images/hero.png"
             alt="Fabian Bresan, MD"
             className="object-cover w-full h-full object-top hover:scale-105 transition-transform duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-            <div className="bg-slate-900/60 backdrop-blur-md p-6 rounded-xl border border-white/10 shadow-lg">
-              <p className="font-serif text-lg italic mb-2">"Expert in bridging the gap between clinical data and business objectives."</p>
+          <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
+            <div className="bg-slate-900/60 backdrop-blur-md p-6 rounded-3xl border border-white/10 shadow-lg">
+
               <p className="font-bold text-sm text-primary-200">FABIAN BRESAN, MD</p>
               <p className="text-xs text-slate-300 mt-1 tracking-wider">MEDICAL STRATEGIST & CLIENT ENGAGEMENT DIRECTOR</p>
             </div>

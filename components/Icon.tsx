@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  Target, 
-  FileText, 
-  Layers, 
-  Brain, 
-  Stethoscope, 
-  Microscope, 
-  Briefcase, 
+import {
+  Target,
+  FileText,
+  Layers,
+  Brain,
+  Stethoscope,
+  Microscope,
+  Briefcase,
   GraduationCap,
   Mail,
   Phone,

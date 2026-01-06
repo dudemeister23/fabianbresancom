@@ -20,7 +20,7 @@ export const Experience: React.FC = () => {
                   {/* Timeline dot */}
                   <div className="absolute -left-[41px] top-1.5 w-5 h-5 rounded-full border-4 border-white bg-primary-600 shadow-sm"></div>
 
-                  <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                  <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                     <div className="flex flex-wrap justify-between items-baseline mb-2">
                       <h3 className="text-xl font-bold text-slate-900">{job.role}</h3>
                       <span className="text-sm font-semibold text-primary-700 bg-primary-50 px-3 py-1 rounded-full">{job.period}</span>
@@ -55,14 +55,14 @@ export const Experience: React.FC = () => {
 
           {/* Education & Credentials Column */}
           <div className="lg:col-span-1">
-            <div className="sticky top-24">
+            <div>
               <h2 className="font-serif text-3xl font-bold text-slate-900 mb-10 flex items-center gap-3">
                 <Icon name="GraduationCap" className="text-primary-600" /> Education
               </h2>
 
               <div className="space-y-6">
                 {EDUCATION.map((edu, idx) => (
-                  <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                  <div key={idx} className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
                     <h3 className="text-lg font-bold text-slate-900">{edu.degree}</h3>
                     <div className="text-primary-700 font-medium mb-1">{edu.institution}</div>
                     <div className="text-slate-500 text-sm mb-3">{edu.location} | {edu.year}</div>
@@ -70,13 +70,13 @@ export const Experience: React.FC = () => {
                   </div>
                 ))}
 
-                <div className="bg-slate-900 text-white p-6 rounded-xl shadow-lg mt-8">
+                <div className="bg-slate-900 text-white p-6 rounded-3xl shadow-lg mt-8">
                   <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
                     <Icon name="Stethoscope" size={20} className="text-primary-400" />
                     Therapeutic Areas
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {['Neurology', 'Ophthalmology', 'Psychiatry', 'Dermatology', 'Internal Medicine', 'Immunology'].map((area) => (
+                    {['Neurology', 'Ophthalmology', 'Psychiatry', 'Dermatology', 'Internal Medicine'].map((area) => (
                       <span key={area} className="px-3 py-1 bg-slate-800 text-xs rounded-full border border-slate-700">
                         {area}
                       </span>

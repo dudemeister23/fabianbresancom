@@ -6,7 +6,7 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+        <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
 
           {/* Contact Info Sidebar */}
           <div className="bg-slate-900 text-white p-10 md:w-2/5 flex flex-col justify-between">
@@ -18,7 +18,7 @@ export const Contact: React.FC = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-white/10 p-2 rounded-lg text-primary-400">
+                  <div className="bg-white/10 p-2 rounded-2xl text-primary-400">
                     <Icon name="Mail" size={20} />
                   </div>
                   <div>
@@ -70,7 +70,7 @@ export const Contact: React.FC = () => {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                     placeholder="John Doe"
                   />
                 </div>
@@ -110,7 +110,7 @@ export const Contact: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-primary-600 text-white font-semibold py-4 rounded-lg hover:bg-primary-700 transition-colors shadow-lg shadow-primary-200"
+                className="w-full bg-primary-600 text-white font-semibold py-4 rounded-2xl hover:bg-primary-700 transition-colors shadow-lg shadow-primary-200"
               >
                 Send Message
               </button>
