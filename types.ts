@@ -21,6 +21,7 @@ export interface PortfolioItem {
   description: string;
   imageUrl?: string;
   tags: string[];
+  link?: string;
 }
 
 export interface ContactInfo {

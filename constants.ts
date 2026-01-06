@@ -115,6 +115,15 @@ export const EXPERIENCE: ExperienceItem[] = [
 
 export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
   {
+    id: '10',
+    title: 'Rangaraju Lab Website',
+    category: 'Digital Strategy',
+    description: 'Developed the digital presence for the Rangaraju Lab, a leading neuroscience research program focusing on neuroenergetics.',
+    tags: ['Web Design', 'Strategy', 'Neuroscience', 'Academic'],
+    imageUrl: '/images/portfolio/portfolio-rangaraju.png',
+    link: 'https://rangarajulab.org'
+  },
+  {
     id: '2',
     title: 'Continuous Drug Delivery in nAMD and DME',
     category: 'CME Webcast',

@@ -45,20 +45,7 @@ export const Hero: React.FC = () => {
             </a>
           </div>
 
-          <div className="flex items-center gap-6 pt-8 text-slate-400 text-sm">
-            <div className="flex items-center gap-2">
-              <Icon name="Target" size={18} className="text-primary-400" />
-              <span>Communications Strategy</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Icon name="Brain" size={18} className="text-primary-400" />
-              <span>Scientific Leadership</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Icon name="Layers" size={18} className="text-primary-400" />
-              <span>Operations</span>
-            </div>
-          </div>
+
         </div>
 
         {/* User Headshot with styling */}
