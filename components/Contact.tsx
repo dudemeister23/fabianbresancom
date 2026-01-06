@@ -110,7 +110,7 @@ export const Contact: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-primary-600 text-white font-semibold py-4 rounded-2xl hover:bg-primary-700 transition-colors shadow-lg shadow-primary-200"
+                className="w-full bg-primary-600 text-white font-semibold py-4 rounded-2xl hover:bg-primary-700 transition-colors"
               >
                 Send Message
               </button>

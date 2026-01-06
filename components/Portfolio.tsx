@@ -11,18 +11,13 @@ export const Portfolio: React.FC = () => {
   return (
     <section id="portfolio" className="py-24 bg-white relative">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-          <div className="max-w-xl">
+        <div className="mb-12 text-center">
+          <div className="max-w-2xl mx-auto">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">Selected Work</h2>
-            <div className="w-20 h-1 bg-primary-600 mb-6"></div>
+            <div className="w-20 h-1 bg-primary-600 mb-6 mx-auto"></div>
             <p className="text-slate-600">
               A sample of non-proprietary work representing capabilities in high-science communication and strategic planning.
             </p>
-          </div>
-          <div className="mt-6 md:mt-0">
-            <button className="px-6 py-3 border-2 border-slate-900 text-slate-900 font-semibold rounded-2xl hover:bg-slate-900 hover:text-white transition-colors flex items-center gap-2">
-              <Icon name="Download" size={18} /> Request Full Portfolio
-            </button>
           </div>
         </div>
 
@@ -100,7 +95,7 @@ export const Portfolio: React.FC = () => {
                 </>
               ) : (
                 <>
-                  <Icon name="ChevronDown" size={18} /> Show More ({PORTFOLIO_SAMPLES.length - INITIAL_COUNT} more)
+                  <Icon name="ChevronDown" size={18} /> Show More ({PORTFOLIO_SAMPLES.length - INITIAL_COUNT})
                 </>
               )}
             </button>

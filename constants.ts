@@ -122,13 +122,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     tags: ['Ophthalmology', 'Retina', 'Webcast', 'CME'],
     imageUrl: '/images/portfolio/portfolio-02.jpg'
   },
-  {
-    id: '3',
-    title: 'Person-Centered Care in Parkinson’s',
-    category: 'CE Webcast',
-    description: 'Exploration of new and emerging treatments for UA, focusing on pathophysiology, imaging features, and complement inhibition therapies to slow progression.',
-    tags: ['Neurology', 'Psychiatry', 'Monograph', 'CME'],
-  },
+
   {
     id: '4',
     title: 'Complement Inhibition in Geographic Atrophy',
@@ -177,13 +171,7 @@ export const PORTFOLIO_SAMPLES: PortfolioItem[] = [
     imageUrl: '/images/portfolio/portfolio-03.png',
     tags: ['Ophthalmology', 'TED', 'Monograph', 'CME'],
   },
-  {
-    id: '7',
-    title: 'Seeing Through LEMS: Early Detection',
-    category: 'CE Webcast',
-    description: 'Guide to identifying ocular symptoms of Lambert-Eaton myasthenic syndrome (LEMS) and coordinating care between optometry and neurology.',
-    tags: ['Neurology', 'Neuro-Ophthalmology', 'Webcast', 'Rare Disease'],
-  },
+
 ];
 
 export const EDUCATION = [
