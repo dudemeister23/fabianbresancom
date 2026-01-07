@@ -5,6 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fabian Bresan, MD | Scientific Strategy & Medical Communications Director</title>
+  <meta name="description"
+    content="Professional portfolio of Fabian Bresan, MD. Scientific Strategy & Medical Communications Director specializing in translating clinical data into high-impact educational strategies.">
+  <meta name="keywords"
+    content="Fabian Bresan, MD, Medical Communications, Scientific Strategy, Medical Education, Clinical Data, Healthcare Consulting">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fabianbresan.com/">
+  <meta property="og:title" content="Fabian Bresan, MD | Scientific Strategy & Medical Communications Director">
+  <meta property="og:description"
+    content="Bridging the gap between clinical data and business objectives with MD-credentialed strategy and leadership.">
+  <meta property="og:image" content="https://fabianbresan.com/images/hero.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://fabianbresan.com/">
+  <meta property="twitter:title" content="Fabian Bresan, MD | Scientific Strategy & Medical Communications Director">
+  <meta property="twitter:description"
+    content="Bridging the gap between clinical data and business objectives with MD-credentialed strategy and leadership.">
+  <meta property="twitter:image" content="https://fabianbresan.com/images/hero.png">
+
   <link rel="icon" href="data:,">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -50,12 +71,27 @@
           },
           keyframes: {
             fadeInUp: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
               '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeInLeft: {
+              '0%': { opacity: '0', transform: 'translateX(-30px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' },
+            },
+            fadeInRight: {
+              '0%': { opacity: '0', transform: 'translateX(30px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' },
+            },
+            scaleIn: {
+              '0%': { opacity: '0', transform: 'scale(0.95)' },
+              '100%': { opacity: '1', transform: 'scale(1)' },
             }
           },
           animation: {
-            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'fade-in-left': 'fadeInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'fade-in-right': 'fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'scale-in': 'scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
           }
         }
       }
@@ -70,6 +106,41 @@
     .lucide {
       vertical-align: middle;
     }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-hidden {
+      opacity: 0;
+    }
+
+    .reveal-up {
+      transform: translateY(30px);
+    }
+
+    .reveal-down {
+      transform: translateY(-30px);
+    }
+
+    .reveal-left {
+      transform: translateX(-30px);
+    }
+
+    .reveal-right {
+      transform: translateX(30px);
+    }
+
+    .reveal-scale {
+      transform: scale(0.95);
+    }
+
+    .reveal-visible {
+      opacity: 1 !important;
+      transform: translate(0, 0) scale(1) !important;
+    }
   </style>
 
   <script type="importmap">
@@ -83,7 +154,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-ClefvPKu.js"></script>
+  <script type="module" crossorigin src="/assets/index-B7hwaOjE.js"></script>
 </head>
 
 <body class="bg-gray-50 text-slate-800 antialiased selection:bg-primary-100 selection:text-primary-900 font-sans">
