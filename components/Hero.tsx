@@ -8,38 +8,42 @@ export const Hero: React.FC = () => {
       className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-900"
       style={{ backgroundImage: 'url(/images/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-slate-900/40"></div>
+      {/* Sophisticated overlay for better text readability */}
+      <div className="absolute inset-0 bg-slate-900/60 lg:bg-gradient-to-r lg:from-slate-900 lg:via-slate-900/40 lg:to-transparent z-0"></div>
 
       <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-left space-y-8 animate-fade-in-up">
-          <div className="inline-block px-4 py-1 bg-primary-500/20 border border-primary-400/30 text-primary-300 rounded-full text-sm font-semibold tracking-wide">
+          <div className="inline-block px-4 py-1 bg-primary-500/10 border border-primary-400/20 text-primary-300 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
             AVAILABLE FOR STRATEGIC LEADERSHIP & CONSULTING
           </div>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-            Scientific Strategy.<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300">
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight">
+            Scientific Strategy &<br />
+            <span
+              className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-300 to-primary-100"
+              style={{ WebkitBackgroundClip: 'text', backgroundClip: 'text' }}
+            >
               Medical Communications.
             </span>
           </h1>
 
-          <p className="text-xl text-slate-300 max-w-lg leading-relaxed">
+          <p className="text-xl text-slate-300 max-w-lg leading-relaxed font-light">
             MD-credentialed Medical Director bridging the gap between clinical data and business objectives.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 max-w-lg">
             <a
               href="#contact"
-              className="flex-1 px-8 py-4 bg-white text-slate-900 font-medium rounded-2xl shadow-lg hover:bg-primary-100 transition-all hover:shadow-xl text-center flex items-center justify-center"
+              className="flex-1 px-8 py-4 bg-primary-500 text-white font-semibold rounded-2xl shadow-lg hover:bg-primary-400 transition-all hover:shadow-primary-500/30 hover:-translate-y-0.5 text-center flex items-center justify-center group"
             >
               Work With Me
+              <Icon name="ChevronRight" size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </a>
 
             <a
               href={CONTACT_INFO.resumeUrl}
               download
-              className="flex-1 px-8 py-4 bg-slate-100 text-slate-900 border border-slate-200 font-medium rounded-2xl hover:bg-white transition-all text-center flex items-center justify-center gap-2"
+              className="flex-1 px-8 py-4 bg-white text-slate-900 border border-slate-200 font-bold rounded-2xl shadow-sm hover:bg-slate-50 transition-all text-center flex items-center justify-center gap-2 hover:-translate-y-0.5"
             >
               Download Resume <Icon name="Download" size={18} />
             </a>
@@ -49,17 +53,16 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* User Headshot with styling */}
-        <div className="hidden md:block relative h-[600px] w-full bg-slate-200 rounded-[2rem] overflow-hidden shadow-2xl">
+        <div className="hidden md:block relative h-[650px] w-full bg-slate-800 rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white/5 group">
           <img
             src="/images/hero.png"
             alt="Fabian Bresan, MD"
-            className="object-cover w-full h-full object-top hover:scale-105 transition-transform duration-700"
+            className="object-cover w-full h-full object-top group-hover:scale-110 transition-transform duration-1000 ease-in-out"
           />
-          <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
-            <div className="bg-slate-900/60 backdrop-blur-md p-6 rounded-3xl border border-white/10 shadow-lg">
-
-              <p className="font-bold text-sm text-primary-200">FABIAN BRESAN, MD</p>
-              <p className="text-xs text-slate-300 mt-1 tracking-wider">MEDICAL STRATEGIST & CLIENT ENGAGEMENT DIRECTOR</p>
+          <div className="absolute inset-x-0 bottom-0 p-8">
+            <div className="bg-slate-900/80 backdrop-blur-xl p-6 rounded-[2rem] border border-white/20 shadow-2xl transform transition-transform duration-500 group-hover:-translate-y-2">
+              <p className="font-bold text-sm text-primary-300 tracking-wider">FABIAN BRESAN, MD</p>
+              <p className="text-xs text-slate-300 mt-1 tracking-widest uppercase opacity-80">MEDICAL STRATEGIST & SCIENTIFIC CONTENT DIRECTOR</p>
             </div>
           </div>
         </div>

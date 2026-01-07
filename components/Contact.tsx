@@ -87,15 +87,12 @@ export const Contact: React.FC = () => {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">Subject</label>
-                <select
+                <input
+                  type="text"
                   id="subject"
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
-                >
-                  <option>Medical Education Strategy</option>
-                  <option>Content Development (Slide Deck, etc)</option>
-                  <option>Grant / Needs Assessment</option>
-                  <option>General Inquiry</option>
-                </select>
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                  placeholder="How can I help you?"
+                />
               </div>
 
               <div>

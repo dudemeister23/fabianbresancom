@@ -55,19 +55,7 @@ export const SERVICES: ServiceItem[] = [
   },
 ];
 
-export const EXPERIENCE: ExperienceItem[] = [
-  {
-    role: 'Principal / Operations Lead',
-    company: 'CIQ of Palm Beach',
-    location: 'Palm Beach Gardens, FL',
-    period: 'May 2025 – Present',
-    description: 'Building and scaling operational infrastructure for a private communications unit, focusing on financial efficiency and process optimization.',
-    achievements: [
-      'Manage full P&L oversight and strategic forecasting for a capital-intensive business unit.',
-      'Directed complex client projects and implemented SOPs that reduced turnaround time and streamlined workflows.',
-      'Recruited a cross-functional team and negotiated high-value contracts with subcontractors to optimize profit margins.',
-    ],
-  },
+export const SCIENTIFIC_EXPERIENCE: ExperienceItem[] = [
   {
     role: 'Senior Manager, Scientific Strategy & Content',
     company: 'MedEdicus',
@@ -75,7 +63,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     period: 'Dec. 2023 – Apr. 2025',
     description: 'Strategic lead for a portfolio of accredited programs, serving as the primary bridge between scientific data and communications execution.',
     achievements: [
-      'Strategic Account Leadership: Directed the scientific strategy for high-priority accounts, securing funding from major grantors (Amgen, Iveric Bio, Bausch + Lomb).',
+      'Strategic Content Development: Directed the scientific strategy for high-priority accounts, securing funding from major grantors (Amgen, Iveric Bio, Bausch + Lomb).',
       'KOL & Faculty Management: Owned relationships with top-tier KOLs, managing expectations and aligning clinical data for on-site/virtual deliverables.',
       'Program Architecture & Revenue: Architected multi-format initiatives (webcasts, podcasts) that maximized reach and led to repeat business.',
       'Cross-Functional Execution: Partnered with grant, accreditation, and events teams for 100% on-time delivery of compliant programs.',
@@ -109,6 +97,21 @@ export const EXPERIENCE: ExperienceItem[] = [
     period: 'Nov. 2019 – Oct. 2020',
     achievements: [
       'Completed clinical rotations in Neurology, Surgery, and Internal Medicine.',
+    ],
+  },
+];
+
+export const BUSINESS_EXPERIENCE: ExperienceItem[] = [
+  {
+    role: 'Principal / Operations Lead',
+    company: 'CIQ of Palm Beach',
+    location: 'Palm Beach Gardens, FL',
+    period: 'May 2025 – Present',
+    description: 'Executive leadership focusing on high-level operational strategy and business unit growth.',
+    achievements: [
+      'P&L Oversight: Managed full financial responsibility and strategic forecasting for a capital-intensive business unit.',
+      'Strategic Forecasting: Analyzed market trends and operational data to drive long-term business sustainability.',
+      'Team Leadership: Recruited and directed a cross-functional team, optimizing workflows and project delivery.',
     ],
   },
 ];
