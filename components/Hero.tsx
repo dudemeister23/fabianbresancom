@@ -8,8 +8,12 @@ export const Hero: React.FC = () => {
       className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-900"
       style={{ backgroundImage: 'url(/images/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      {/* Sophisticated overlay for better text readability */}
-      <div className="absolute inset-0 bg-slate-900/60 lg:bg-gradient-to-r lg:from-slate-900 lg:via-slate-900/40 lg:to-transparent z-0"></div>
+      {/* Background image is now fully visible with no overlay */}
+      <style>{`
+        .hero-text-shadow {
+          text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+      `}</style>
 
       <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-left space-y-8 animate-fade-in-up">
@@ -17,7 +21,7 @@ export const Hero: React.FC = () => {
             AVAILABLE FOR STRATEGIC LEADERSHIP & CONSULTING
           </div>
 
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight">
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight hero-text-shadow">
             Scientific Strategy &<br />
             <span
               className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-300 to-primary-100"
@@ -27,7 +31,7 @@ export const Hero: React.FC = () => {
             </span>
           </h1>
 
-          <p className="text-xl text-slate-300 max-w-lg leading-relaxed font-light">
+          <p className="text-xl text-slate-300 max-w-lg leading-relaxed font-light hero-text-shadow">
             MD-credentialed Medical Director bridging the gap between clinical data and business objectives.
           </p>
 
