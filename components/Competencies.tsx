@@ -30,7 +30,8 @@ export const Competencies: React.FC = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">Core Competencies</h2>
-                    <p className="text-slate-500 max-w-2xl mx-auto italic">
+                    <div className="w-20 h-1 bg-primary-600 mb-6 mx-auto"></div>
+                    <p className="text-slate-600 max-w-2xl mx-auto italic">
                         A "T-shaped" professional profile combining deep clinical strategy with broad operational excellence.
                     </p>
                 </div>

@@ -33,7 +33,7 @@ export const Portfolio: React.FC = () => {
                 }`}
               style={{
                 transitionProperty: 'opacity, transform, max-height',
-                transitionDelay: index >= INITIAL_COUNT ? `${(index - INITIAL_COUNT) * 75}ms` : '0ms',
+                transitionDelay: isExpanded && index >= INITIAL_COUNT ? `${(index - INITIAL_COUNT) * 75}ms` : '0ms',
               }}
             >
               {item.link ? (
@@ -124,10 +124,10 @@ export const Portfolio: React.FC = () => {
 
         {/* Show More / Show Less Button */}
         {hasMoreItems && (
-          <div className="flex justify-center mt-10">
+          <div className={`flex justify-center relative z-10 transition-all duration-500 ${isExpanded ? 'mt-12' : '-mt-4'}`}>
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="px-8 py-4 bg-primary-600 text-white font-semibold rounded-2xl hover:bg-primary-700 transition-colors flex items-center gap-2"
+              className="w-full max-w-2xl py-4 bg-primary-600 text-white font-semibold rounded-2xl hover:bg-primary-700 transition-colors flex items-center justify-center gap-2"
             >
               {isExpanded ? (
                 <>
