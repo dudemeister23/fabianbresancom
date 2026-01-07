@@ -61,11 +61,11 @@ export const Hero: React.FC = () => {
               <img
                 src="/images/hero.png"
                 alt="Fabian Bresan, MD"
-                className="object-cover w-full h-full object-top transition-transform duration-1000 ease-in-out group-hover:scale-105"
+                className="object-cover w-full h-full object-top transition-transform duration-1000 ease-in-out"
               />
             </div>
             <div className="absolute inset-x-0 bottom-0 p-8">
-              <div className="bg-white/10 backdrop-blur-md p-6 rounded-[2rem] border border-white/20 shadow-2xl transform transition-transform duration-500 group-hover:-translate-y-2">
+              <div className="bg-white/10 backdrop-blur-md p-6 rounded-[2rem] border border-white/20 shadow-2xl transform transition-transform duration-500">
                 <p className="font-bold text-base text-primary-300 tracking-wider hero-text-shadow">FABIAN BRESAN, MD</p>
                 <p className="text-xs text-slate-300 mt-1 tracking-widest uppercase opacity-80 hero-text-shadow">MEDICAL STRATEGIST & SCIENTIFIC CONTENT DIRECTOR</p>
               </div>
