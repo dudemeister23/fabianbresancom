@@ -64,9 +64,9 @@ export const Hero: React.FC = () => {
             className="object-cover w-full h-full object-top group-hover:scale-110 transition-transform duration-1000 ease-in-out"
           />
           <div className="absolute inset-x-0 bottom-0 p-8">
-            <div className="bg-slate-900/80 backdrop-blur-xl p-6 rounded-[2rem] border border-white/20 shadow-2xl transform transition-transform duration-500 group-hover:-translate-y-2">
-              <p className="font-bold text-sm text-primary-300 tracking-wider">FABIAN BRESAN, MD</p>
-              <p className="text-xs text-slate-300 mt-1 tracking-widest uppercase opacity-80">MEDICAL STRATEGIST & SCIENTIFIC CONTENT DIRECTOR</p>
+            <div className="bg-white/10 backdrop-blur-md p-6 rounded-[2rem] border border-white/20 shadow-2xl transform transition-transform duration-500 group-hover:-translate-y-2">
+              <p className="font-bold text-base text-primary-300 tracking-wider hero-text-shadow">FABIAN BRESAN, MD</p>
+              <p className="text-xs text-slate-300 mt-1 tracking-widest uppercase opacity-80 hero-text-shadow">MEDICAL STRATEGIST & SCIENTIFIC CONTENT DIRECTOR</p>
             </div>
           </div>
         </div>

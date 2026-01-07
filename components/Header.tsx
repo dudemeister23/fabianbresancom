@@ -14,7 +14,9 @@ export const Header: React.FC = () => {
   }, []);
 
   const navLinks = [
+    { name: 'Start', href: '#' },
     { name: 'About', href: '#about' },
+    { name: 'Core Competencies', href: '#competencies' },
     { name: 'Experience', href: '#experience' },
     { name: 'Selected Work', href: '#portfolio' },
     { name: 'Contact', href: '#contact' },
@@ -26,7 +28,7 @@ export const Header: React.FC = () => {
         }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className={`font-serif text-2xl font-bold tracking-tight transition-colors ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+        <a href="#" className={`font-serif text-3xl font-bold tracking-tight leading-none transition-colors ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
           Fabian Bresan<span className={isScrolled ? 'text-primary-800' : 'text-primary-300'}>, MD</span>
         </a>
 
