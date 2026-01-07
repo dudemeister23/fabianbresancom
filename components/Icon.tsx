@@ -16,7 +16,10 @@ import {
   ChevronRight,
   Menu,
   X,
-  ExternalLink
+  ExternalLink,
+  ChevronUp,
+  ChevronDown,
+  Send
 } from 'lucide-react';
 
 interface IconProps {
@@ -42,7 +45,10 @@ const icons: Record<string, React.ElementType> = {
   ChevronRight,
   Menu,
   X,
-  ExternalLink
+  ExternalLink,
+  ChevronUp,
+  ChevronDown,
+  Send
 };
 
 export const Icon: React.FC<IconProps> = ({ name, className, size = 24 }) => {

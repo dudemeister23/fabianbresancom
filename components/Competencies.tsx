@@ -26,7 +26,7 @@ const COMPETENCY_GROUPS = [
 
 export const Competencies: React.FC = () => {
     return (
-        <section id="competencies" className="py-20 bg-white">
+        <section id="competencies" className="py-16 md:py-24 bg-white scroll-mt-20">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">Core Competencies</h2>

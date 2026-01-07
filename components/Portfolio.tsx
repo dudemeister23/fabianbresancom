@@ -9,9 +9,9 @@ export const Portfolio: React.FC = () => {
   const hasMoreItems = PORTFOLIO_SAMPLES.length > INITIAL_COUNT;
 
   return (
-    <section id="portfolio" className="py-24 bg-white relative">
+    <section id="portfolio" className="py-16 md:py-24 bg-white relative scroll-mt-20">
       <div className="container mx-auto px-6">
-        <div className="mb-12 text-center">
+        <div className="mb-12 text-center reveal reveal-up">
           <div className="max-w-2xl mx-auto">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">Selected Work</h2>
             <div className="w-20 h-1 bg-primary-600 mb-6 mx-auto"></div>
@@ -25,7 +25,7 @@ export const Portfolio: React.FC = () => {
           {PORTFOLIO_SAMPLES.map((item, index) => (
             <div
               key={item.id}
-              className={`group relative bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl hover:scale-[1.02] transition-all duration-500 flex flex-col h-full ${index >= INITIAL_COUNT
+              className={`reveal reveal-up group relative bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 hover:shadow-xl hover:scale-[1.02] transition-all duration-500 flex flex-col h-full ${index >= INITIAL_COUNT
                 ? isExpanded
                   ? 'opacity-100 translate-y-0 max-h-[800px]'
                   : 'opacity-0 translate-y-8 max-h-0 overflow-hidden pointer-events-none'
@@ -33,13 +33,13 @@ export const Portfolio: React.FC = () => {
                 }`}
               style={{
                 transitionProperty: 'opacity, transform, max-height',
-                transitionDelay: isExpanded && index >= INITIAL_COUNT ? `${(index - INITIAL_COUNT) * 75}ms` : '0ms',
+                transitionDelay: isExpanded && index >= INITIAL_COUNT ? `${(index - INITIAL_COUNT) * 75}ms` : `${index * 100}ms`,
               }}
             >
               {item.link ? (
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="flex flex-col h-full">
                   {/* Card Image Placeholder */}
-                  <div className="h-64 bg-slate-200 relative overflow-hidden flex-shrink-0">
+                  <div className="h-48 md:h-64 bg-slate-200 relative overflow-hidden flex-shrink-0">
                     {item.imageUrl ? (
                       <img
                         src={item.imageUrl}
@@ -80,7 +80,7 @@ export const Portfolio: React.FC = () => {
               ) : (
                 <div className="flex flex-col h-full">
                   {/* Card Image Placeholder */}
-                  <div className="h-64 bg-slate-200 relative overflow-hidden flex-shrink-0">
+                  <div className="h-48 md:h-64 bg-slate-200 relative overflow-hidden flex-shrink-0">
                     {item.imageUrl ? (
                       <img
                         src={item.imageUrl}

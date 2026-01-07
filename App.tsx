@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
-import { Competencies } from './components/Competencies';
+import { Services } from './components/Services';
 import { Experience } from './components/Experience';
 import { Portfolio } from './components/Portfolio';
 import { Contact } from './components/Contact';
@@ -15,10 +15,8 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
 
-        <div id="about">
-          <About />
-        </div>
-        <Competencies />
+        <About />
+        <Services />
         <Experience />
         <Portfolio />
         <Contact />

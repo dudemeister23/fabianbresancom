@@ -3,13 +3,13 @@ import { Icon } from './Icon';
 
 export const About: React.FC = () => {
     return (
-        <section id="about-me" className="py-24 bg-slate-50 relative overflow-hidden">
+        <section id="about" className="py-16 md:py-24 bg-slate-50 relative overflow-hidden scroll-mt-20">
             {/* Subtle background elements */}
             <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-slate-900/5 rounded-full blur-3xl"></div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-4xl mx-auto reveal reveal-up">
                     <div className="bg-white rounded-[3rem] shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden flex flex-col md:flex-row">
                         {/* Left accent column */}
                         <div className="w-full md:w-1/3 bg-slate-900 p-12 text-white flex flex-col justify-center relative overflow-hidden">

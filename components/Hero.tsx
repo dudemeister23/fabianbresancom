@@ -5,33 +5,33 @@ import { CONTACT_INFO } from '../constants';
 export const Hero: React.FC = () => {
   return (
     <section
-      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-900"
+      id="hero"
+      className="relative min-h-screen flex items-center pt-20 bg-slate-900 scroll-mt-20"
       style={{ backgroundImage: 'url(/images/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      {/* Background image is now fully visible with no overlay */}
       <style>{`
         .hero-text-shadow {
           text-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
       `}</style>
 
-      <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-        <div className="text-left space-y-8 animate-fade-in-up">
-          <div className="inline-block px-4 py-1 bg-primary-500/10 border border-primary-400/20 text-primary-300 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
+      <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="text-left space-y-4 md:space-y-6">
+          <div className="reveal reveal-left inline-block px-4 py-1 bg-primary-500/10 border border-primary-400/20 text-primary-300 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
             AVAILABLE FOR STRATEGIC LEADERSHIP & CONSULTING
           </div>
 
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight hero-text-shadow">
+          <h1 className="reveal reveal-left font-serif text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight hero-text-shadow" style={{ transitionDelay: '200ms' }}>
             Scientific Strategy &<br />
             <span
               className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-300 to-primary-100"
               style={{ WebkitBackgroundClip: 'text', backgroundClip: 'text' }}
             >
-              Medical Communications.
+              Medical Communications
             </span>
           </h1>
 
-          <p className="text-xl text-slate-300 max-w-lg leading-relaxed font-light hero-text-shadow">
+          <p className="reveal reveal-left text-xl text-slate-300 max-w-lg leading-relaxed font-light hero-text-shadow" style={{ transitionDelay: '400ms' }}>
             MD-credentialed Medical Director bridging the gap between clinical data and business objectives.
           </p>
 
@@ -52,25 +52,27 @@ export const Hero: React.FC = () => {
               Download Resume <Icon name="Download" size={18} />
             </a>
           </div>
-
-
         </div>
 
         {/* User Headshot with styling */}
-        <div className="hidden md:block relative h-[650px] w-full bg-slate-800 rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white/5 group">
-          <img
-            src="/images/hero.png"
-            alt="Fabian Bresan, MD"
-            className="object-cover w-full h-full object-top group-hover:scale-110 transition-transform duration-1000 ease-in-out"
-          />
-          <div className="absolute inset-x-0 bottom-0 p-8">
-            <div className="bg-white/10 backdrop-blur-md p-6 rounded-[2rem] border border-white/20 shadow-2xl transform transition-transform duration-500 group-hover:-translate-y-2">
-              <p className="font-bold text-base text-primary-300 tracking-wider hero-text-shadow">FABIAN BRESAN, MD</p>
-              <p className="text-xs text-slate-300 mt-1 tracking-widest uppercase opacity-80 hero-text-shadow">MEDICAL STRATEGIST & SCIENTIFIC CONTENT DIRECTOR</p>
+        <div className="relative h-full flex justify-center items-center lg:justify-end reveal reveal-right group" style={{ transitionDelay: '600ms' }}>
+          <div className="relative mx-auto md:mr-0 max-w-md lg:max-w-xl w-full h-[450px] lg:h-[500px] xl:h-[650px] max-h-[75vh]">
+            <div className="absolute inset-0 bg-slate-800 rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white/5">
+              <img
+                src="/images/hero.png"
+                alt="Fabian Bresan, MD"
+                className="object-cover w-full h-full object-top transition-transform duration-1000 ease-in-out group-hover:scale-105"
+              />
+            </div>
+            <div className="absolute inset-x-0 bottom-0 p-8">
+              <div className="bg-white/10 backdrop-blur-md p-6 rounded-[2rem] border border-white/20 shadow-2xl transform transition-transform duration-500 group-hover:-translate-y-2">
+                <p className="font-bold text-base text-primary-300 tracking-wider hero-text-shadow">FABIAN BRESAN, MD</p>
+                <p className="text-xs text-slate-300 mt-1 tracking-widest uppercase opacity-80 hero-text-shadow">MEDICAL STRATEGIST & SCIENTIFIC CONTENT DIRECTOR</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section >
+    </section>
   );
 };
